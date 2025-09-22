@@ -1,0 +1,5 @@
+log_level: INFO
+continue_on_error: true
+global_settings:
+  timeout: 30
+  max_retries: 3

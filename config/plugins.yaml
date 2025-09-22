@@ -1,0 +1,21 @@
+csv_plugin:
+  enabled: true
+  file_path: "data/inputs/sample_data.csv"
+  output_path: "data/outputs/processed_data.csv"
+  transformations:
+    rename_columns:
+      old_name: new_name
+    filter:
+      status: active
+
+api_plugin:
+  enabled: true
+  url: "https://api.example.com/data"
+  headers:
+    Authorization: "Bearer YOUR_TOKEN"
+  data_path: ["results", "data"]
+  output_path: "data/outputs/api_data.json"
+
+json_plugin:
+  enabled: false
+  # Configuration for JSON plugin
